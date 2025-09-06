@@ -14,8 +14,12 @@ function Homepage() {
   // quindi al caricamento della componente avverà la chiamata
   useEffect(fetchData, []);
   return (
-    <div>
-      <h1>Homepage</h1>
+    <div className="container my-1">
+      <div className="row">
+        <div className="">
+          <h1>Welcome in our fake Api shop </h1>
+        </div>
+      </div>
     </div>
   );
 }

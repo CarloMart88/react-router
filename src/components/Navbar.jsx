@@ -2,10 +2,10 @@ import { NavLink } from "react-router-dom";
 
 function Navbar() {
   return (
-    <div className="container">
+    <div className="container my-1">
       <div className="row">
         <div className="col-12">
-          <ul className="list-unstyled d-flex">
+          <ul className="list-unstyled d-flex gap-3">
             <li>
               <NavLink to="/">home</NavLink>
             </li>
