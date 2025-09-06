@@ -65,3 +65,18 @@ ul li a.active {
   color: #fff;
 }
 
+.China{
+  background-image: url("../debit-card-6470460_1280.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 700px;
+}
+
+.about{
+  background-image: url("../service-4540203_1280.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 700px;
+  color: #fff;
+}
