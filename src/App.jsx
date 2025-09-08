@@ -15,7 +15,7 @@ function App() {
           <Route path="/products">
             <Route index element={<Products />}></Route>
             {/* creo la rotta annidata */}
-            <Route path="id" element={<DetailProdutct />}></Route>
+            <Route path=":id" element={<DetailProdutct />}></Route>
           </Route>
         </Route>
       </Routes>
