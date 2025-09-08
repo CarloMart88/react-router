@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
+import { NavLink } from "react-router-dom";
 
 function Products() {
   const [datas, setDatas] = useState([]);
@@ -34,6 +35,12 @@ function Products() {
                 <ul className="list-group list-group-flush">
                   <li className="list-group-item">Category: {category}</li>
                   <li className="list-group-item">Price: {price}</li>
+                  <li className="">
+                    <NavLink
+                      className="list-group-item btn btn-success"
+                      to={`/detailproduct/${id}`}
+                    ></NavLink>
+                  </li>
                 </ul>
               </div>
             </div>
