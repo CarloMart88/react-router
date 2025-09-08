@@ -3,6 +3,7 @@ import DefaultLayout from "./layouts/DefaultLayout";
 import Homepage from "./pages/Homepage";
 import About from "./pages/About";
 import Products from "./pages/Products";
+import DetailProdutct from "./pages/DetailProdutct";
 
 function App() {
   return (
@@ -11,7 +12,11 @@ function App() {
         <Route element={<DefaultLayout />}>
           <Route path="/" element={<Homepage />}></Route>
           <Route path="/about" element={<About />}></Route>
-          <Route path="/products" element={<Products />}></Route>
+          <Route path="/products">
+            <Route index element={<Products />}></Route>
+            {/* creo la rotta annidata */}
+            <Route path="/products/id" element={<DetailProdutct />}></Route>
+          </Route>
         </Route>
       </Routes>
     </BrowserRouter>
