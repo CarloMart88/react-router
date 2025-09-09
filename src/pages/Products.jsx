@@ -37,7 +37,7 @@ function Products() {
                   <li className="list-group-item">Price: {price}</li>
                   <li className="">
                     <NavLink className="list-group-item" to={`/products/${id}`}>
-                      Scopri di piu
+                      👀 Give a look 👀
                     </NavLink>
                   </li>
                 </ul>
