@@ -37,7 +37,7 @@ const DetailProdutct = () => {
               <li className="list-group-item">Price: {price}</li>
               <li className="">
                 <NavLink className="list-group-item" to={`/products`}>
-                  Torna indietro
+                  Back to the shop
                 </NavLink>
               </li>
             </ul>
@@ -50,13 +50,13 @@ const DetailProdutct = () => {
               className="btn btn-primary g-1 my-1"
               onClick={() => navigate(`/products/${parseInt(id) + 1}`)}
             >
-              Next
+              Next 🎁
             </button>
             <button
               className="btn btn-primary g-1 my-1"
               onClick={() => navigate(`/products/${parseInt(id) - 1}`)}
             >
-              Previous
+              Previous 🛒
             </button>
           </div>
         </div>
